@@ -359,12 +359,6 @@
                 musicBtn.classList.add("spinning"); 
             }
         }, { once: true });
-    </script>
-
-   </section> <script>
-        var music = document.getElementById("weddingMusic");
-        var musicBtn = document.getElementById("musicBtn");
-
         function toggleMusic() {
             if (music.paused) {
                 music.play(); 
