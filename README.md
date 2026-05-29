@@ -336,33 +336,58 @@
         </div>
         <div class="ornament"></div>
     </section>
-<footer>
-        <p>&copy; 2026 D2N OFFICIAL.</p>
-    </footer>
-        <script>
+</section> <script>
         var music = document.getElementById("weddingMusic");
         var musicBtn = document.getElementById("musicBtn");
 
         function toggleMusic() {
             if (music.paused) {
-                music.play();
-                musicBtn.classList.add("spinning");
-                musicBtn.innerText = "🎵"; // Ikon saat musik menyala
+                music.play(); 
+                musicBtn.classList.add("spinning"); 
+                musicBtn.innerText = "🎵";
             } else {
-                music.pause();
-                musicBtn.classList.remove("spinning");
-                musicBtn.innerText = "🔇"; // Ikon saat musik dimatikan
+                music.pause(); 
+                musicBtn.classList.remove("spinning"); 
+                musicBtn.innerText = "🔇";
             }
         }
-
-        // Otomatis putar musik begitu tamu menyentuh atau melakukan scroll pertama kali di layar HP
+        
+        // Otomatis putar musik begitu tamu menyentuh atau melakukan scroll pertama kali
         document.addEventListener('click', function() {
-            if (music.paused) {
-                music.play();
-                musicBtn.classList.add("spinning");
+            if (music.paused) { 
+                music.play(); 
+                musicBtn.classList.add("spinning"); 
             }
-        }, { once: true }); // { once: true } memastikan fungsi ini cuma berjalan sekali di awal sentuhan
+        }, { once: true });
     </script>
 
-</body>
-</html
+   </section> <script>
+        var music = document.getElementById("weddingMusic");
+        var musicBtn = document.getElementById("musicBtn");
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play(); 
+                musicBtn.classList.add("spinning"); 
+                musicBtn.innerText = "🎵";
+            } else {
+                music.pause(); 
+                musicBtn.classList.remove("spinning"); 
+                musicBtn.innerText = "🔇";
+            }
+        }
+        
+        // Otomatis putar musik begitu tamu menyentuh atau melakukan scroll pertama kali
+        document.addEventListener('click', function() {
+            if (music.paused) { 
+                music.play(); 
+                musicBtn.classList.add("spinning"); 
+            }
+        }, { once: true });
+    </script>
+
+    <p style="text-align: center; color: rgba(255,255,255,0.3); font-size: 0.7rem; margin-bottom: 20px;">
+        © 2026 D2N OFFICIAL.
+    </p>
+
+</body> </html>
