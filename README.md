@@ -336,9 +336,6 @@
         </div>
         <div class="ornament"></div>
     </section>
-</section> <script>
-        var music = document.getElementById("weddingMusic");
-        var musicBtn = document.getElementById("musicBtn");
 
         function toggleMusic() {
             if (music.paused) {
